@@ -1,19 +1,20 @@
 import Ember from 'ember';
 
-var questions = [{
-  id: 1,
-  title: "How do I clone a git project?",
-  author: "Test Author A",
-  notes: "I have a project on Github, I want it on my remote device"
-}, {
-  id: 2,
-  title: "How does Ember work?",
-  author: "Test Author B",
-  notes: "Sorry I can't be more specific"
-}];
-
 export default Ember.Route.extend({
   model() {
     return this.store.findAll('question');
+  },
+
+  actions: {
+    saveQuestion3(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
+    },
+
+    destroyRental(rental) {
+      rental.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });
