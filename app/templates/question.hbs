@@ -1,4 +1,6 @@
-<h2>Answers to this question will go here.</h2>
-<h3>{{question.title}}<br>{{question.author}}<br>{{question.notes}}</h3>
+<h3>{{question.title}}</h3><br>
+<h4>{{question.author}}</h4><br>
+<h5>{{question.notes}}</h5><br>
 {{update-question question=model update="update"}}
-{{question-answer question=model}}
+{{question-answer question=model destroyQuestion="destroyQuestion"}}
+<h2>Answers to this question will go here.</h2>

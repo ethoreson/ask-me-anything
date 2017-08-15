@@ -1,6 +1,7 @@
 <li>
-  {{question.title}}<br>
-  {{question.author}}<br>
-  <!-- {{question.notes}} -->
+  {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
+  <br>
+  {{question.author}}
+  <br>
   <!-- {{update-question question=question update="update"}} -->
 </li>
