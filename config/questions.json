@@ -6,5 +6,9 @@
     "title": "How does Ember work?",
     "author": "Test Author B",
     "notes": "Sorry I can't be more specific"
-  }]
+  }],
+  "answers": [{
+    "author": "Emilie",
+    "explanation": "In command line, 'git clone github-url-here'."
+    }]
 }
