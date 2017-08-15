@@ -4,3 +4,9 @@
 <br>
 <h3>Additional Notes: {{question.notes}}</h3>
 <br>
+<h1>Answers</h1>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>

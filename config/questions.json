@@ -10,5 +10,8 @@
   "answers": [{
     "author": "Emilie",
     "explanation": "In command line, 'git clone github-url-here'."
-    }]
+  }, {
+    "author": "Answer B",
+    "explanation": "answer goes here."
+  }]
 }
